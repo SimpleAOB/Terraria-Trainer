@@ -23,9 +23,12 @@ namespace Terraria_Trainer
         #region Addresses
         int PlayerBase;
         //This pointer base should be that of the Health one
-        int PlayerBaseHM = 0x03D29AA8;
+        //int PlayerBaseHM = 0x03D29AA8;
+          int PlayerBaseHM = 0x03E39AA8;
         //This pointer base should be that of the topleft most slot of the Money/Ammo category.
-        int PlayerbaseMA = 0x193B6C6C;
+        //int PlayerBaseMA = 0x193B6C6C;
+          int PlayerbaseMA = 0x194B4808;
+          
         int[] multiLevel = new int[] { 0x04 };
         #endregion
 
@@ -174,7 +177,76 @@ namespace Terraria_Trainer
                 int playerBase2 = Mem.ReadMultiLevelPointer(PlayerBase2, 4, multiLevel2);
                 label1.Text = "HP: " + Mem.ReadInt(playerBase2 + player.offsets.Health);
                 label3.Text = "Mana: " + Mem.ReadInt(playerBase2 + player.offsets.Mana);
-                label4.Text = Convert.ToString(Mem.ReadInt(playerBase + player.offsets.amslot));
+                if (Convert.ToString(Mem.ReadInt(playerBase + player.offsets.amslot)) == "0")
+                {
+                    if (comboBox1.SelectedIndex == 2)
+                    {
+                        label4.Text = "M1: Empty";
+                    }
+                    else if (comboBox1.SelectedIndex == 3)
+                    {
+                        label4.Text = "M2: Empty";
+                    }
+                    else if (comboBox1.SelectedIndex == 4)
+                    {
+                        label4.Text = "M3: Empty";
+                    }
+                    else if (comboBox1.SelectedIndex == 5)
+                    {
+                        label4.Text = "M4: Empty";
+                    }
+                    else if (comboBox1.SelectedIndex == 6)
+                    {
+                        label4.Text = "A1: Empty";
+                    }
+                    else if (comboBox1.SelectedIndex == 7)
+                    {
+                        label4.Text = "A2: Empty";
+                    }
+                    else if (comboBox1.SelectedIndex == 8)
+                    {
+                        label4.Text = "A3: Empty";
+                    }
+                    else if (comboBox1.SelectedIndex == 9)
+                    {
+                        label4.Text = "A4: Empty";
+                    }
+                }
+                else
+                {
+                    if (comboBox1.SelectedIndex == 2)
+                    {
+                        label4.Text = "M1: " + Convert.ToString(Mem.ReadInt(playerBase + player.offsets.amslot));
+                    }
+                    else if (comboBox1.SelectedIndex == 3)
+                    {
+                        label4.Text = "M2: " + Convert.ToString(Mem.ReadInt(playerBase + player.offsets.amslot));
+                    }
+                    else if (comboBox1.SelectedIndex == 4)
+                    {
+                        label4.Text = "M3: " + Convert.ToString(Mem.ReadInt(playerBase + player.offsets.amslot));
+                    }
+                    else if (comboBox1.SelectedIndex == 5)
+                    {
+                        label4.Text = "M4: " + Convert.ToString(Mem.ReadInt(playerBase + player.offsets.amslot));
+                    }
+                    else if (comboBox1.SelectedIndex == 6)
+                    {
+                        label4.Text = "A1: " + Convert.ToString(Mem.ReadInt(playerBase + player.offsets.amslot));
+                    }
+                    else if (comboBox1.SelectedIndex == 7)
+                    {
+                        label4.Text = "A2: " + Convert.ToString(Mem.ReadInt(playerBase + player.offsets.amslot));
+                    }
+                    else if (comboBox1.SelectedIndex == 8)
+                    {
+                        label4.Text = "A3: " + Convert.ToString(Mem.ReadInt(playerBase + player.offsets.amslot));
+                    }
+                    else if (comboBox1.SelectedIndex == 9)
+                    {
+                        label4.Text = "A4: " + Convert.ToString(Mem.ReadInt(playerBase + player.offsets.amslot));
+                    }
+                }
             }
         }
 
