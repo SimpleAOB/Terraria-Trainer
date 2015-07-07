@@ -1,4 +1,4 @@
-# Terraria-Trainer
+# Terraria Trainer
 Terraria Trainer for Ammo, Money, Health, and Mana. 
 
 Written in C++. 
