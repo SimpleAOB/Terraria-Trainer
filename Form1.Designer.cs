@@ -55,9 +55,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(163, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(100, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
+            this.label1.Text = "HP: Not Connected";
             // 
             // textBox1
             // 
@@ -97,9 +97,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(163, 61);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.Size = new System.Drawing.Size(112, 13);
             this.label3.TabIndex = 6;
-            this.label3.Text = "label3";
+            this.label3.Text = "Mana: Not Connected";
             // 
             // button1
             // 
@@ -116,9 +116,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(163, 74);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.Size = new System.Drawing.Size(54, 13);
             this.label4.TabIndex = 8;
-            this.label4.Text = "label4";
+            this.label4.Text = "MA Count";
             // 
             // Form1
             // 
