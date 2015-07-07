@@ -114,7 +114,7 @@ namespace Terraria_Trainer
             }
             else if (comboBox1.SelectedIndex == 6)
             {
-                PlayerBase = PlayerbaseMA + 0x1;
+                PlayerBase = PlayerbaseMA + 0x10;
                 multiLevel = new int[] { 0x00 };
                 labelActive = "aslot1";
             }
@@ -130,7 +130,7 @@ namespace Terraria_Trainer
                 multiLevel = new int[] { 0x00 };
                 labelActive = "aslot3";
             }
-            else if (comboBox1.SelectedIndex == 8)
+            else if (comboBox1.SelectedIndex == 9)
             {
                 PlayerBase = PlayerbaseMA + 0x1C;
                 multiLevel = new int[] { 0x00 };
