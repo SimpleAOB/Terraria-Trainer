@@ -22,7 +22,9 @@ namespace Terraria_Trainer
 
         #region Addresses
         int PlayerBase;
+        //This pointer base should be that of the Health one
         int PlayerBaseHM = 0x03D29AA8;
+        //This pointer base should be that of the topleft most slot of the Money/Ammo category.
         int PlayerbaseMA = 0x193B6C6C;
         int[] multiLevel = new int[] { 0x04 };
         #endregion
