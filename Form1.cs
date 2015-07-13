@@ -24,7 +24,7 @@ namespace Terraria_Trainer
         int PlayerBase;
         //This pointer base should be that of the Health one
         //int PlayerBaseHM = 0x03D29AA8;
-          int PlayerBaseHM = 0x03E39AA8;
+          int PlayerBaseHM = 0x03B39C76;
         //This pointer base should be that of the topleft most slot of the Money/Ammo category.
         //int PlayerBaseMA = 0x193B6C6C;
           int PlayerbaseMA = 0x194B4808;
